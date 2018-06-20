@@ -1,6 +1,6 @@
 .idea
 .vscode
 
-node_modules
-
 ormconfig.json
+node_modules
+build
