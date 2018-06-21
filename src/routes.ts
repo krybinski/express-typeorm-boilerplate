@@ -1,5 +1,4 @@
-import { userGetAllAction } from "./controller/UserGetAllAction";
-import { userGetByIdAction } from "./controller/UserGetByIdAction";
+import UserController from "./controller/UserController";
 
 /**
  * All application routes.
@@ -8,11 +7,11 @@ export const AppRoutes = [
   {
     path: "/users",
     method: "get",
-    action: userGetAllAction
+    action: UserController.getAll
   },
   {
     path: "/users/:id",
     method: "get",
-    action: userGetByIdAction
+    action: UserController.getById
   }
 ];

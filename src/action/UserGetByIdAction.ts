@@ -14,6 +14,5 @@ export async function userGetByIdAction(req: Request, res: Response) {
     res.end();
     return;
   }
-
   res.send(user);
 }
